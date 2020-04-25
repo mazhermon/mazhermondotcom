@@ -1,16 +1,19 @@
 import Head from 'next/head';
-import styles from './layout.module.css';
-import utilStyles from '../styles/utilStyles.module.css';
 import Link from 'next/link';
+import GlobalStyles from '../styles/globalStyles';
 
 const name = 'Maz Hermon';
 export const siteTitle = 'mazhermon';
 
 function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <link rel="stylesheet" href="/favicon.ico" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
         <meta
           name="description"
           content="A test space for Maz hermon, front end developer from Wellington, NZ."
@@ -23,46 +26,16 @@ function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link
+          rel="stylesheet"
+          href="https://use.typekit.net/atm4hil.css"
+        ></link>
       </Head>
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <img
-              src="/images/mazhermon.png"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/mazhermon.png"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
+      {/* <GlobalStyles /> */}
+      <header></header>
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
     </div>
-  );
+  )
 }
 
 export default Layout;

@@ -1,7 +1,10 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utilStyles.module.css';
 import { getSortedPostsData } from '../lib/post';
+
+import { HomeHi } from '../components/home-hi/home-hi';
+
+import styled from 'styled-components';
 
 export default function Home({ allPostsData }) {
   return (
@@ -9,28 +12,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quis
-          nobis debitis amet quae nam autem mollitia rem voluptatum, ut facere
-          sunt cumque, explicabo saepe nesciunt, ex consectetur! Et, doloribus!
-        </p>
-      </section>
-
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              {title}
-              <br />
-              {id}
-              <br />
-              {date}
-            </li>
-          ))}
-        </ul>
-      </section>
+      <HomeHi></HomeHi>
     </Layout>
   );
 }
