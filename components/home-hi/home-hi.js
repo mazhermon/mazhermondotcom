@@ -21,41 +21,8 @@ const MazWavesSection = styled.section`
   }
 `;
 
-// leave here for reference for now
-// const Hi = styled.span`
-//   font-size: 1rem;
-//   font-weight: bold;
-
-//   ${(props) =>
-//     props.huge &&
-//     `
-//     font-size: 9rem;
-//     font-weight: 900;
-//     line-height: 22rem;
-//     margin-bottom: -67px;
-
-//     @media (min-width: 300px) {
-//       font-size: 12rem;
-//     }
-
-//     @media (min-width: 500px) {
-//       font-size: 16rem;
-//     }
-
-//     @media (min-width: 760px) {
-//       font-size: 22rem;
-//     }
-//   `}
-// `;
-
-
 const HomeIntroCopy = styled.div`
   grid-area: content;
-  max-width: 25ch;
-
-  @media (min-width: 760px) {
-    max-width: 30ch;
-  }
 `;
 
 const MazWavesWrapper = styled.div`
@@ -80,18 +47,16 @@ const MazWavesWrapper = styled.div`
 `;
 
 export const HomeHi = () => (
-  <>
-    <MazWavesSection>
-      <HomeIntroCopy>
-        <p>
-          A testing space for the side projects and general web tinkering of Maz
-          Hermon, a front-end developer living in Wellington NZ.
-        </p>
-      </HomeIntroCopy>
+  <MazWavesSection>
+    <HomeIntroCopy>
+      <p>
+        A testing space for the side projects and general web tinkering of Maz
+        Hermon, a front-end developer living in Wellington NZ.
+      </p>
+    </HomeIntroCopy>
 
-      <MazWavesWrapper>
-        <SvgWavesMaz />
-      </MazWavesWrapper>
-    </MazWavesSection>
-  </>
+    <MazWavesWrapper>
+      <SvgWavesMaz />
+    </MazWavesWrapper>
+  </MazWavesSection>
 );
