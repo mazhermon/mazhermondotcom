@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+A testing space for the side projects and general web tinkering of Maz Hermon, a front-end developer living in Wellington NZ.
