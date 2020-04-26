@@ -28,21 +28,28 @@ const HomeIntroCopy = styled.div`
 const MazWavesWrapper = styled.div`
   transform: scale(3, 1.5) rotate(-12deg);
   position: absolute;
-  bottom: -60px;
+  bottom: 0;
   width: 100vw;
 
   @media (min-width: 500px) {
-    bottom: -170px;
   }
   @media (min-width: 760px) {
-    bottom: -230px;
-    transform: scale(1.3, 1) rotate(-12deg);
+    bottom: 35px;
+    transform: scale(3, 1.5) rotate(-12deg);
   }
   @media (min-width: 1200px) {
-    bottom: -280px;
+    bottom: 18px;
+    transform: scale(2, 1.5) rotate(-14deg);
   }
-  @media (min-width: 1200px) {
-    bottom: -380px;
+
+  @media (min-width: 1900px) {
+    bottom: -30px;
+    transform: scale(2, 1.3) rotate(-14deg);
+  }
+
+  @media (min-width: 2400px) {
+    bottom: -120px;
+    transform: scale(2, 1.1) rotate(-14deg);
   }
 `;
 
