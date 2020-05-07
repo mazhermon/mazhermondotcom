@@ -26,16 +26,16 @@ const item = {
 // get these from theme
 const MazWaves = styled.div`
   .svg-waves-maz__wave--1 {
-    fill: #8c7ebf;
+    fill: ${(props) => props.theme.colors.gray};
   }
   .svg-waves-maz__wave--2 {
-    fill: #f24150;
+    fill: ${(props) => props.theme.colors.accent1};
   }
   .svg-waves-maz__wave--3 {
-    fill: #b0b0bf;
+    fill: ${(props) => props.theme.colors.gray2};
   }
   .svg-waves-maz__wave--4 {
-    fill: #464a8c;
+    fill: ${(props) => props.theme.colors.primaryDark};
   }
 `;
 

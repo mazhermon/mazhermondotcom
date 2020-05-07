@@ -1,8 +1,11 @@
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../styles/globalStyles';
 
-const theme = {
+export const theme = {
   colors: {
+    bg: '',
+    copy: '',
+
     primary: '#8C7EBF',
     primaryDark: '#464A8C',
 
@@ -17,15 +20,33 @@ const theme = {
     bgLight: '#BFDCDF',
     bgSuperLight: '#EBFFFB',
 
+    black: '#41414B',
     gray1: '#F8F8FD',
     gray2: '#B0B0BF',
     gray3: '#A0A0BC',
     gray: '#8C7EBF',
+  },
 
-    bgDarkMode: '#332e2e',
-    textDarkMode: '#ece8e8',
+  fonts: {
+    typeface: {
+      serifbold: 'clarendon-urw-extra-narrow, serif',
+      serif: 'clarendon-urw, serif',
+      script: 'viktor-script, sans-serif',
+      sans: 'itc-avant-garde-gothic-pro, sans-serif',
+    },
+    size: {},
+  },
+
+  darkMode: {
+    bg: '#332e2e',
+    copy: '#ece8e8',
   },
 };
+
+// TODO
+// const themeDark = {
+
+// }
 
 // do dark mode setup later maybe
 
