@@ -4,11 +4,10 @@ import styled from 'styled-components';
 import SvgWavesMaz from './svg-waves-maz';
 
 const HomeWavesSection = styled.section`
-  border-bottom: 4px solid black;
   position: relative;
   display: grid;
   grid-template-columns: 3fr 2.5fr 1fr;
-  height: 96vh;
+  height: calc(100vh - 50px);
   overflow: hidden;
   padding: 4rem 1rem 0 1rem;
 
@@ -39,7 +38,7 @@ const HomeWavesSection = styled.section`
   }
 `;
 
-const HomeIntroCopy = styled.div`
+const HomeIntroCopyNah = styled.div`
   grid-column: 2 / span 1;
 
   @media (min-width: 1200px) {
@@ -94,12 +93,13 @@ const MazWavesWrapper = styled.div`
 
 export const HomeWavesIntro = () => (
   <HomeWavesSection>
-    <HomeIntroCopy>
+    <HomeIntroCopyNah>
       <p>
         A testing space for the side projects and general web tinkering of Maz
         Hermon, a front-end developer living in Wellington NZ.
       </p>
-    </HomeIntroCopy>
+    </HomeIntroCopyNah>
+
     <MazWavesWrapper>
       <SvgWavesMaz />
     </MazWavesWrapper>

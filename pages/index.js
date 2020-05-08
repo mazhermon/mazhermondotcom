@@ -14,9 +14,10 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <HomeWavesIntro />
-      <AboutFace />
       <HomeStripe2 />
-      <LearnAndPlay />
+      <AboutFace />
+
+      {/* <LearnAndPlay /> */}
     </Layout>
   );
 }
