@@ -2,9 +2,10 @@ import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import { getSortedPostsData } from '../lib/post';
 
-import { HomeHi } from '../components/home-hi/home-hi';
-
-import styled from 'styled-components';
+import { AboutFace } from '../components/home-hi/about-face';
+import { HomeStripe2 } from '../components/home-hi/home-stripe-2';
+import LearnAndPlay from '../components/home-hi/learn-and-play';
+import { HomeWavesIntro } from '../components/home-hi/home-waves-intro';
 
 export default function Home({ allPostsData }) {
   return (
@@ -12,7 +13,10 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <HomeHi></HomeHi>
+      <HomeWavesIntro />
+      <AboutFace />
+      <HomeStripe2 />
+      <LearnAndPlay />
     </Layout>
   );
 }

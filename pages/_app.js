@@ -3,8 +3,11 @@ import GlobalStyles from '../styles/globalStyles';
 
 export const theme = {
   colors: {
-    bg: '',
-    copy: '',
+    bg: '#F8F8FD',
+    bgLight: '#BFDCDF',
+    bgSuperLight: '#EBFFFB',
+
+    copy: '#41414B',
 
     primary: '#8C7EBF',
     primaryDark: '#464A8C',
@@ -16,9 +19,6 @@ export const theme = {
     accent1: '#F24150',
     accent2: '#F2A7B5',
     accent3: '#FDF9BC',
-
-    bgLight: '#BFDCDF',
-    bgSuperLight: '#EBFFFB',
 
     black: '#41414B',
     gray1: '#F8F8FD',

@@ -23,6 +23,7 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         font-size: 0.9rem;
         line-height: 1.1rem;
+        background-color: ${(props) => props.theme.colors.bg};
 
         @media (prefers-color-scheme: dark) {
             background-color: ${(props) => props.theme.darkMode.bg};
