@@ -41,7 +41,7 @@ const HomeWavesSection = styled.section`
 const HomeIntroCopyNah = styled.div`
   grid-column: 2 / span 1;
 
-  @media (min-width: 1200px) {
+  /* @media (min-width: 1200px) {
     font-size: 1.1rem;
     line-height: 1.3rem;
   }
@@ -49,7 +49,7 @@ const HomeIntroCopyNah = styled.div`
   @media (min-width: 1500px) {
     font-size: 1.3rem;
     line-height: 1.5rem;
-  }
+  } */
 `;
 
 const MazWavesWrapper = styled.div`

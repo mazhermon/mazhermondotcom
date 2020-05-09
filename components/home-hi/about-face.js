@@ -80,28 +80,28 @@ const AboutText = styled.div``;
 export const AboutFace = () => (
   <AboutFaceWrapper>
     <AboutContent>
+      <AboutFaceTitle>Maz Who?</AboutFaceTitle>
       <AboutText>
         <p>
           Maz Hermon is a front-end developer &amp; digital creative, people
           &amp; practice leader, conference speaker &amp; pair programming
           enthusiast. Maz has a focus on the front of front-end web development
-          but enjoys learning about the full stack for fun &amp; profit.
-          JavaScript, CSS and working with people to achieve valuable results
-          are his core skill sets.
+          but enjoys learning about full stack topics for both fun &amp; profit.
         </p>
         <p>
-          He doesn't picks sides on the CSS vs CSS-in-JS debate or get too
-          attached to one framework over another, preferring to enjoy it all.
+          JavaScript, CSS and working with people to achieve valuable results
+          are his core skill sets. He doesn't pick sides on the CSS vs CSS-in-JS
+          debate or get too attached to one framework over another, preferring
+          to enjoy it all.
         </p>
         <p>
           Maz occasionally speaks about himself in the third person but this
-          does not extend to in person conversation (as yet) Jokes, this is
+          does not extend to in person conversation (as yet). Jokes, this is
           totally Maz’s publicist Shmaz Mermon. (Ain’t nobody got time to write
           their own promos).
         </p>
       </AboutText>
     </AboutContent>
-    <AboutFaceTitle>Maz Who?</AboutFaceTitle>
 
     <MazFaceWrapper>
       <MazFace></MazFace>
