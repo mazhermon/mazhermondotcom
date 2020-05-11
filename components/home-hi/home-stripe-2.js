@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const HomeStripe2Wrapper = styled.div`
   padding: 16px 5% 5%;
+  min-height: 100px;
   position: relative;
   overflow: hidden;
   background: ${(props) => props.theme.colors.black};
@@ -13,6 +14,7 @@ const HomeStripe2Wrapper = styled.div`
 
   @media screen and (min-width: 400px) {
     font-size: 3.5vw;
+    min-height: 50px;
   }
 
   /* @media screen and (min-width: 500px) {

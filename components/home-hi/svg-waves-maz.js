@@ -25,11 +25,23 @@ const SvgWavesMaz = (props) => {
   const container = shouldReduceMotion
     ? {}
     : {
-        hidden: { y: 0 },
-        show: {
+        hidden: {
           y: 0,
           transition: {
+            duration: 9,
+            delay: 3,
+            yoyo: Infinity,
+            ease: 'easeInOut',
+          },
+        },
+        show: {
+          y: 80,
+          transition: {
             staggerChildren: 0.5,
+            duration: 7,
+            delay: 3,
+            yoyo: Infinity,
+            ease: 'easeInOut',
           },
         },
       };
@@ -45,6 +57,13 @@ const SvgWavesMaz = (props) => {
     : {
         hidden: { y: 100, transition: { ...wavesTransition } },
         show: { y: 0, transition: { ...wavesTransition } },
+      };
+
+  const item2 = shouldReduceMotion
+    ? {}
+    : {
+        hidden: { y: 100, x: 250, transition: { ...wavesTransition } },
+        show: { y: 0, x: 0, transition: { ...wavesTransition } },
       };
 
   return (
@@ -65,7 +84,7 @@ const SvgWavesMaz = (props) => {
               />
             </motion.g>
 
-            <motion.g variants={item}>
+            <motion.g variants={item2}>
               <path
                 className="svg-waves-maz__wave svg-waves-maz__wave--2"
                 d="M1260.56 336.86c-80.84-3.17-127.54 10.63-181.43 23.38s-97-9.54-138.32-17-106-13.78-149.1 0-55.68 19.12-138.32 17-77.25-34-132.93-33.95-97 32.92-167.06 20.19-98.8-4.23-176 3.21-48.5 6.38-152.69-11.65c-9.3-1.61-17.45-3-24.68-4.16L0 694l1366-.2V355.12c-48.24-4.66-37.48-15.59-105.44-18.26z"

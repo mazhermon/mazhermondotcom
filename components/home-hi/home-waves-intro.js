@@ -7,7 +7,7 @@ const HomeWavesSection = styled.section`
   position: relative;
   display: grid;
   grid-template-columns: 3fr 2.5fr 1fr;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 100px);
   overflow: hidden;
   padding: 4rem 1rem 0 1rem;
 
@@ -17,6 +17,9 @@ const HomeWavesSection = styled.section`
 
   @media (min-width: 350px) {
     padding-left: 3rem;
+  }
+  @media (min-width: 400px) {
+    height: calc(100vh - 50px);
   }
   @media (min-width: 670px) {
     padding-top: 5rem;
@@ -57,14 +60,15 @@ const MazWavesWrapper = styled.div`
   position: absolute;
   transform-origin: bottom;
   width: 100vw;
-  bottom: -90px;
+  bottom: -50px;
+  /* transform: scale(3, 1.2) rotate(-9deg); */
   transform: scale(3, 1.2) rotate(-9deg);
 
   svg {
     display: block;
   }
 
-  @media (min-width: 600px) {
+  /* @media (min-width: 600px) {
     bottom: -150px;
     transform: scale(3, 1) rotate(-9deg);
   }
@@ -88,6 +92,24 @@ const MazWavesWrapper = styled.div`
 
   @media (min-width: 2400px) {
     transform: scale(2, 0.4) rotate(-14deg);
+  } */
+
+  @media (min-width: 600px) {
+    bottom: -100px;
+    transform: scale(3, 1) rotate(-9deg);
+  }
+  @media (min-width: 760px) {
+    bottom: -125px;
+    transform: scale(3, 0.8) rotate(-14deg);
+  }
+
+  @media (min-width: 900px) {
+    transform: scale(2, 0.6) rotate(-14deg);
+  }
+
+  @media (min-width: 1600px) {
+    bottom: -230px;
+    transform: scale(1.3, 0.5) rotate(-14deg);
   }
 `;
 

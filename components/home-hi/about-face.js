@@ -6,11 +6,11 @@ import MazFace from './maz-face';
 const AboutFaceWrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr) minmax(100px, 1fr);
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
   grid-template-areas:
     'text text .'
     'face face face';
-  height: 96vh;
+  min-height: 96vh;
   position: relative;
   overflow: hidden;
   padding: 4rem 1rem 0 1rem;
@@ -27,16 +27,16 @@ const AboutFaceWrapper = styled.section`
   @media (min-width: 800px) {
     padding-left: 6rem;
     padding-top: 7rem;
-    /* grid-template-areas:
-      'text . .'
-      'face face face'; */
-    grid-template-columns: 2fr 2fr minmax(400px, 4fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: 'text face face';
+    grid-template-columns: 1fr minmax(400px, 1fr);
+    grid-template-areas: 'text face';
   }
 
   @media (min-width: 1200px) {
-    grid-template-columns: 2fr 2fr minmax(400px, 1fr);
+    padding-top: 9rem;
+    padding-left: 12rem;
+  }
+
+  @media (min-width: 1200px) {
     padding-top: 9rem;
     padding-left: 12rem;
   }
@@ -49,7 +49,7 @@ const AboutFaceWrapper = styled.section`
 const AboutFaceTitle = styled.h2`
   font-size: 4rem;
   line-height: 1;
-  margin: 0;
+  margin: 0 0 1.5rem 0;
 
   max-width: 400px;
 
@@ -68,12 +68,28 @@ const AboutFaceTitle = styled.h2`
 const MazFaceWrapper = styled.div`
   grid-area: face;
   align-self: end;
-  transform: translateX(55%);
+  transform: translateX(19%);
+  width: 131vw;
+
+  @media (min-width: 600px) {
+    transform: translateX(35%);
+    width: 111vw;
+  }
+
+  @media (min-width: 800px) {
+    transform: translateX(7%);
+    width: 83vw;
+  }
+
+  @media (min-width: 1200px) {
+    transform: translateX(29%);
+    width: 57vw;
+  }
 `;
 
 const AboutContent = styled.div`
   grid-area: text;
-  line-height: 1.5;
+  max-width: 60ch;
 `;
 const AboutText = styled.div``;
 
@@ -86,13 +102,15 @@ export const AboutFace = () => (
           Maz Hermon is a front-end developer &amp; digital creative, people
           &amp; practice leader, conference speaker &amp; pair programming
           enthusiast. Maz has a focus on the front of front-end web development
-          but enjoys learning about full stack topics for both fun &amp; profit.
+          but enjoys learning about all things 'web'.
         </p>
         <p>
           JavaScript, CSS and working with people to achieve valuable results
           are his core skill sets. He doesn't pick sides on the CSS vs CSS-in-JS
-          debate or get too attached to one framework over another, preferring
-          to enjoy it all.
+          debate or get too attached to one CSS or JavaScript framework or
+          library over others, preferring to keep an open mind, focus on core
+          language fundementals and enjoy all of the amzing technology and tools
+          we have access to in 2020.
         </p>
         <p>
           Maz occasionally speaks about himself in the third person but this
