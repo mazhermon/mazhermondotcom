@@ -118,7 +118,8 @@ export const HomeWavesIntro = () => (
     <HomeIntroCopyNah>
       <p>
         A testing space for the side projects and general web tinkering of Maz
-        Hermon, a front-end developer living in Wellington NZ.
+        Hermon, a front-end developer living in Wellington NZ. This is me
+        waving...
       </p>
     </HomeIntroCopyNah>
 
