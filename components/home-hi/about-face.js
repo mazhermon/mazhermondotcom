@@ -31,11 +31,8 @@ const AboutFaceWrapper = styled.section`
   }
 
   @media (min-width: 1200px) {
-    padding-top: 9rem;
-    padding-left: 12rem;
-  }
-
-  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr minmax(400px, 1fr);
+    grid-template-areas: '. text face';
     padding-top: 9rem;
     padding-left: 12rem;
   }
@@ -81,18 +78,36 @@ const MazFaceWrapper = styled.div`
   }
 
   @media (min-width: 1200px) {
-    transform: translateX(29%);
+    transform: translateX(52%);
     width: 57vw;
+
+    grid-column: 2 / span 2;
+  }
+
+  @media (min-width: 1800px) {
+    transform: translateX(48%);
   }
 `;
 
 const AboutContent = styled.div`
   grid-area: text;
   max-width: 60ch;
+
+  @media (min-width: 800px) {
+    margin-top: 8rem;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 12rem;
+  }
+
+  @media (min-width: 1800px) {
+    margin-top: 9rem;
+  }
 `;
 const AboutText = styled.div``;
 
-export const AboutFace = () => (
+export const AboutFace = (props) => (
   <AboutFaceWrapper>
     <AboutContent>
       <AboutFaceTitle>Consistently Curious</AboutFaceTitle>
@@ -104,19 +119,11 @@ export const AboutFace = () => (
           passionate about the front-end, and working with teams to delivery
           value to <em>people</em>.
         </p>
-        {/* <p>– Shmaz Mermon, Maz's publicist.</p> */}
-        {/* <p>
-          Maz occasionally speaks about himself in the third person but this
-          does not extend to in person conversation (as yet). Jokes, this is
-          totally Maz’s publicist Shmaz Mermon. (Ain’t nobody got time to write
-          their own promos).
-        </p> */}
       </AboutText>
     </AboutContent>
 
-    {/* use int obs here */}
     <MazFaceWrapper>
-      <MazFace smile={false}></MazFace>
+      <MazFace smile={props.ratio > 0.7}></MazFace>
     </MazFaceWrapper>
   </AboutFaceWrapper>
 );

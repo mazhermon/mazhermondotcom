@@ -10,6 +10,10 @@ const GlobalStyles = createGlobalStyle`
         font-style: normal;
     
         font-size: 100%;
+
+        @media screen and (min-width: 1800px) {
+            font-size: 130%;
+        }
     }
     
     *,
@@ -21,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
     body {
         padding: 0;
         margin: 0;
-        font-size: 1rem;
+        font-size: 0.9rem;
         line-height: 1.5;
         background-color: ${(props) => props.theme.colors.bg};
 
@@ -30,13 +34,23 @@ const GlobalStyles = createGlobalStyle`
             color: ${(props) => props.theme.darkMode.copy};
         }
 
-        /* @media screen and (min-width: 700px) {
-            font-size: 1.1rem;
-        } */
+        @media screen and (min-width: 700px) {
+            font-size: 1rem;
+        }
     }
 
     h1,h2,h3,h4,h5,h6 {
         font-family: ${(props) => props.theme.fonts.typeface.serifbold};
+    }
+
+    .h-visually-hidden { 
+        position: absolute !important;
+        height: 1px; 
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+        clip: rect(1px, 1px, 1px, 1px);
+        white-space: nowrap; /* added line */
     }
 
 `;

@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const MazFaceSVG = styled.div`
   svg {
     display: block;
-    /* border-color: ${(props) => (props.smile ? 'red' : 'blue')}; */
   }
 
   .cls-1 {
@@ -70,10 +69,22 @@ const MazFaceSVG = styled.div`
 
   [class^='smile_'] {
     opacity: ${({ smile }) => (smile ? '1' : '0')};
+    transform: translate(-3px, -1px);
   }
 
   [class^='rest_'] {
     opacity: ${({ smile }) => (smile ? '0' : '1')};
+  }
+
+  .smile_eye-pupils {
+    opacity: 1;
+    transition: transform 0.2s 0.2s;
+    transform: ${({ smile }) =>
+      smile ? 'translate(-3px, -4px)' : 'translate(0,-3px)'};
+    @media (min-width: 800px) {
+      transform: ${({ smile }) =>
+        smile ? 'translate(-3px, -3px)' : 'translate(0,-3px)'};
+    }
   }
 `;
 
@@ -81,7 +92,6 @@ export default function mazFace(props) {
   return (
     <>
       <MazFaceSVG smile={props.smile}>
-        <h1>{props.test}</h1>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 445.25 434.19">
           <g className="head_base">
             <path
@@ -267,8 +277,9 @@ export default function mazFace(props) {
               d="M157.83,170.06s-1.33.54-.33,3.54c.83,2.49,5.1,5,7.68,6.32.52.28,1,.51,1.32.68,2,1-11-4-11-5s-2,1-3,0S153.17,168.53,157.83,170.06Z"
               transform="translate(0 -5.27)"
             />
-            <circle cx="172.5" cy="166.33" r="7" />
-            <circle cx="250.5" cy="163.33" r="7" />
+            {/* non moving eyes */}
+            {/* <circle cx="172.5" cy="166.33" r="7" />
+            <circle cx="250.5" cy="163.33" r="7" /> */}
             <path
               className="cls-9"
               d="M265.5,169.6s-5-10-21-6c0,0-6,0,4-3,0,0,10,0,15,3s7,2,7,3S267.5,171.6,265.5,169.6Z"
