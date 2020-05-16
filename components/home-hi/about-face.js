@@ -116,7 +116,7 @@ export const AboutFace = (props) => (
           Maz Hermon, front-end developer &amp; digital creative, people &amp;
           practice leader, conference speaker &amp; pair programming enthusiast.
           Maz loves learning about the web and is consistently curious &amp;
-          passionate about the front-end, and working with teams to delivery
+          passionate about the front-end, and working with teams to deliver
           value to <em>people</em>.
         </p>
       </AboutText>
