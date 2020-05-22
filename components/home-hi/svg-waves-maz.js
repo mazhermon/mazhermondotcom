@@ -37,7 +37,7 @@ const SvgWavesMaz = (props) => {
         show: {
           y: 80,
           transition: {
-            staggerChildren: 0.5,
+            staggerChildren: 1.5,
             duration: 7,
             delay: 3,
             yoyo: Infinity,

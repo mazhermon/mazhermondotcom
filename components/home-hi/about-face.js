@@ -123,7 +123,7 @@ export const AboutFace = (props) => (
     </AboutContent>
 
     <MazFaceWrapper>
-      <MazFace smile={props.ratio > 0.7}></MazFace>
+      <MazFace smile={props.ratio > 0.75}></MazFace>
     </MazFaceWrapper>
   </AboutFaceWrapper>
 );
