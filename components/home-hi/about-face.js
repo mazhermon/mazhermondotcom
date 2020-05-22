@@ -113,8 +113,10 @@ export const AboutFace = (props) => (
       <AboutFaceTitle>Consistently Curious</AboutFaceTitle>
       <AboutText>
         <p>
-          Maz Hermon, front-end developer &amp; digital creative, people &amp;
+          Maz Hermon, Dad &amp; Husband, front-end developer &amp; digital creative, people &amp;
           practice leader, conference speaker &amp; pair programming enthusiast.
+        </p>
+        <p>
           Maz loves learning about the web and is consistently curious &amp;
           passionate about the front-end, and working with teams to deliver
           value to <em>people</em>.

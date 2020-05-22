@@ -32,7 +32,6 @@ export const theme = {
     typeface: {
       serifbold: 'clarendon-urw-extra-narrow, serif',
       serif: 'clarendon-urw, serif',
-      script: 'viktor-script, sans-serif',
       sans: 'itc-avant-garde-gothic-pro, sans-serif',
     },
     size: {},
