@@ -4,20 +4,16 @@ import styled from 'styled-components';
 import MazFace from './maz-face';
 
 const AboutFaceWrapper = styled.section`
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr) minmax(100px, 1fr);
-  /* grid-template-rows: 1fr 1fr; */
   grid-template-areas:
     'text text .'
     'face face face';
   min-height: 96vh;
   position: relative;
   overflow: hidden;
-  padding: 4rem 1rem 0 1rem;
-
-  /* @media (prefers-color-scheme: dark) {
-    opacity: 0.7;
-  } */
+  padding: 4rem 1rem 4rem 1rem;
 
   @media (min-width: 350px) {
     padding-left: 3rem;
@@ -25,14 +21,15 @@ const AboutFaceWrapper = styled.section`
 
   @media (min-width: 800px) {
     padding-left: 6rem;
-    padding-top: 7rem;
+    /* padding-top: 7rem; */
+    padding-top: 13vh;
     grid-template-columns: 1fr minmax(400px, 1fr);
-    grid-template-areas: 'text face';
+    grid-template-areas: 'text .';
   }
 
   @media (min-width: 1200px) {
     grid-template-columns: 1fr 1fr minmax(400px, 1fr);
-    grid-template-areas: '. text face';
+    grid-template-areas: '. text .';
     padding-top: 9rem;
     padding-left: 12rem;
   }
@@ -52,40 +49,28 @@ const AboutFaceTitle = styled.h2`
   @media (min-width: 800px) {
     font-size: 5rem;
   }
-  /* @media (min-width: 700px) {
-    font-size: 6rem;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: 7rem;
-  } */
 `;
 
 const MazFaceWrapper = styled.div`
-  grid-area: face;
-  align-self: end;
-  transform: translateX(19%);
-  width: 131vw;
+  position: absolute;
+  right: -210px;
+  bottom: 0;
+  width: 400px;
 
-  @media (min-width: 600px) {
-    transform: translateX(35%);
-    width: 111vw;
+  @media (min-width: 500px) {
+    right: -40vw;
+    width: 80vw;
   }
 
   @media (min-width: 800px) {
-    transform: translateX(7%);
-    width: 83vw;
+    right: -360px;
+    width: 700px;
   }
 
   @media (min-width: 1200px) {
-    transform: translateX(52%);
-    width: 57vw;
-
     grid-column: 2 / span 2;
-  }
-
-  @media (min-width: 1800px) {
-    transform: translateX(48%);
+    right: -430px;
+    width: 800px;
   }
 `;
 
@@ -93,17 +78,13 @@ const AboutContent = styled.div`
   grid-area: text;
   max-width: 60ch;
 
-  @media (min-width: 800px) {
-    margin-top: 8rem;
-  }
-
-  @media (min-width: 1200px) {
-    margin-top: 12rem;
+  /* @media (min-width: 800px) {
+    margin-top: 4rem;
   }
 
   @media (min-width: 1800px) {
     margin-top: 9rem;
-  }
+  } */
 `;
 const AboutText = styled.div``;
 

@@ -239,18 +239,7 @@ export default function mazFace(props) {
               transform="translate(0 -5.27)"
             />
           </g>
-          <g className="smile_brows">
-            <path
-              className="cls-9"
-              d="M180.42,151.64c2-.21,5.87-1.62,6.76-2.72s.68-3.09-.52-5-5.39-3.46-7.38-3.25-16.91,1.76-17.8,2.86-6.75,2.72-8.74,2.92-6.65,3.72-7.54,4.81.51,5,2.5,4.77,13-.36,15.92-1.66S179.43,151.74,180.42,151.64Z"
-              transform="translate(0 -5.27)"
-            />
-            <path
-              className="cls-9"
-              d="M277.69,145.64c-1.89-1.19-6.49-5.64-9.48-5.93a27.81,27.81,0,0,0-9,.14c-3.08.71-8.87-1.85-10.86-2s-3-.28-8.34,3.23a41.55,41.55,0,0,1-10.53,5c-2.08.8-.09,1,.81,2.08s1.9,1.19.81,2.09,6.87,1.66,6.87,1.66,6.35-3.41,9.34-3.13,9.95,1,12,.15,5.17-1.52,9.86,1.94,8.58,4.84,9.57,4.93,4.7,3.47,4.08-.61a11.87,11.87,0,0,0-3.32-7.35Z"
-              transform="translate(0 -5.27)"
-            />
-          </g>
+
           <g className="rest_face">
             <path
               className="cls-13"
@@ -301,6 +290,21 @@ export default function mazFace(props) {
               transform="translate(0 -5.27)"
             />
           </g>
+
+          <g className="smile_brows">
+            <path
+              className="cls-9"
+              d="M180.42,151.64c2-.21,5.87-1.62,6.76-2.72s.68-3.09-.52-5-5.39-3.46-7.38-3.25-16.91,1.76-17.8,2.86-6.75,2.72-8.74,2.92-6.65,3.72-7.54,4.81.51,5,2.5,4.77,13-.36,15.92-1.66S179.43,151.74,180.42,151.64Z"
+              transform="translate(0 -5.27)"
+            />
+            <path
+              className="cls-9"
+              d="M277.69,145.64c-1.89-1.19-6.49-5.64-9.48-5.93a27.81,27.81,0,0,0-9,.14c-3.08.71-8.87-1.85-10.86-2s-3-.28-8.34,3.23a41.55,41.55,0,0,1-10.53,5c-2.08.8-.09,1,.81,2.08s1.9,1.19.81,2.09,6.87,1.66,6.87,1.66,6.35-3.41,9.34-3.13,9.95,1,12,.15,5.17-1.52,9.86,1.94,8.58,4.84,9.57,4.93,4.7,3.47,4.08-.61a11.87,11.87,0,0,0-3.32-7.35Z"
+              transform="translate(0 -5.27)"
+            />
+          </g>
+          
+          
           <g className="smile_face">
             <ellipse className="cls-9" cx="212.25" cy="253.19" rx="31" ry="8" />
             <path
@@ -349,6 +353,7 @@ export default function mazFace(props) {
               transform="translate(0 -5.27)"
             />
           </g>
+          
           <g className="smile_eyes_bg">
             <path
               className="cls-13"
@@ -361,12 +366,14 @@ export default function mazFace(props) {
               transform="translate(0 -5.27)"
             />
           </g>
+
           <g className="smile_eye-pupils">
             <g>
               <circle cx="172.25" cy="169.19" r="7" />
-              <circle cx="248.25" cy="168.19" r="7" />
+              <circle cx="250" cy="167" r="7" />
             </g>
           </g>
+          
           <g className="smile_eyes">
             <path
               className="cls-9"

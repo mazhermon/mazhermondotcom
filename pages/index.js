@@ -16,9 +16,9 @@ const createIntersectRatios = () =>
   Array.from({ length: 100 }).map((item, i) => i / 100);
 
 export const IntersectingBox = styled.div`
-  opacity: ${({ ratio }) => (ratio < 0.5 ? ratio * 2 : 1)};
+  /* opacity: ${({ ratio }) => (ratio < 0.5 ? ratio * 2 : 1)};
   transition: opacity 0.4s ease-out;
-  will-change: transition, opacity;
+  will-change: transition, opacity; */
 `;
 
 const hiddenH1 = styled.h1``;
