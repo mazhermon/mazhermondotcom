@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
-import MazFace from './maz-face';
+import MazFace from './maz-face'
 
 const AboutFaceWrapper = styled.section`
   display: grid;
@@ -10,7 +10,7 @@ const AboutFaceWrapper = styled.section`
   grid-template-areas:
     'text text .'
     'face face face';
-  min-height: 96vh;
+  min-height: 56vh;
   position: relative;
   overflow: hidden;
   padding: 4rem 1rem 0 1rem;
@@ -40,7 +40,7 @@ const AboutFaceWrapper = styled.section`
   @media (min-width: 1800px) {
     padding-left: 18rem;
   }
-`;
+`
 
 const AboutFaceTitle = styled.h2`
   font-size: 3rem;
@@ -59,7 +59,7 @@ const AboutFaceTitle = styled.h2`
   @media (min-width: 1200px) {
     font-size: 7rem;
   } */
-`;
+`
 
 const MazFaceWrapper = styled.div`
   grid-area: face;
@@ -87,7 +87,7 @@ const MazFaceWrapper = styled.div`
   @media (min-width: 1800px) {
     transform: translateX(48%);
   }
-`;
+`
 
 const AboutContent = styled.div`
   grid-area: text;
@@ -104,17 +104,18 @@ const AboutContent = styled.div`
   @media (min-width: 1800px) {
     margin-top: 9rem;
   }
-`;
-const AboutText = styled.div``;
+`
+const AboutText = styled.div``
 
-export const AboutFace = (props) => (
+export const AboutFace = props => (
   <AboutFaceWrapper>
     <AboutContent>
       <AboutFaceTitle>Consistently Curious</AboutFaceTitle>
       <AboutText>
         <p>
-          Maz Hermon, Dad &amp; Husband, front-end developer &amp; digital creative, people &amp;
-          practice leader, conference speaker &amp; pair programming enthusiast.
+          Maz Hermon, Dad &amp; Husband, front-end developer &amp; digital
+          creative, people &amp; practice leader, conference speaker &amp; pair
+          programming enthusiast.
         </p>
         <p>
           Maz loves learning about the web and is consistently curious &amp;
@@ -128,4 +129,4 @@ export const AboutFace = (props) => (
       <MazFace smile={props.ratio > 0.75}></MazFace>
     </MazFaceWrapper>
   </AboutFaceWrapper>
-);
+)
