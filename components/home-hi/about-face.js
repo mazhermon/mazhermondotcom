@@ -8,7 +8,7 @@ const AboutFaceWrapper = styled.section`
   grid-template-columns: repeat(2, 1fr) minmax(100px, 1fr);
   /* grid-template-rows: 1fr 1fr; */
   grid-template-areas:
-    'text text .'
+    'text . .'
     'face face face';
   min-height: 56vh;
   position: relative;
